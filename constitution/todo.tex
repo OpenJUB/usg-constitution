@@ -1,0 +1,33 @@
+Oct 15th
+
+USG progress report: bi-monthly, i.e. two per semester (Section 90.)
+USG retreat / internal workshop: every semester after elections (Article XIII, Section 84, ?)
+
+Oct 17th
+
+Use ACRONYM package.
+
+Oct 22nd
+
+DON'T ALLOW \paragraph, replace by parenum with preceding intro sentence
+
+Define new `parenum` environment for §1, §2, etc (as in: \begin{enumerate}[label={\textbf{\S\arabic*}}])
+
+Done - Oct 23 - Colin
+
+Currently: \theenumi = \roman., \theenumii = \alph.
+Then because \parenumi = \S\arabic* define \parenumii = \roman.
+
+Oct 23rd
+
+Currently there are three different section commands: 
+ 1) \section:
+    this causes troubles (an empty line afterwards) when followed by an environment like lists (e.g. parenum)
+2) \sectionstar
+    this is like \section, but without the empty line afterwards
+    however, there is no vertical space before the command, unless it is the first section of a chapter
+3) \sectionss
+    this is like \sectionstar, but with a vertical space before itself
+    this should be used when the section title is followed by an environment and it is not the first section of a chapter
+TODO: simplify this mess
+at least the versions 2 and 3 should be unified to a single one

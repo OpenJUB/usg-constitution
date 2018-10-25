@@ -1,0 +1,17 @@
+- Require everyone that runs to be a member of a committee beforehand?
+
+- Secretaries: Two that take turn taking minutes, One that releases a report every 1 or 2 weeks (possibly member of the PR team)
+
+- Create IT TEAM: Not just one person; two sysadmins who take care of day-to-day sysadmin activities, two developers who advance the voting system to
+ -- allow sign-up for elections directly there
+ -- are easier to maintain
+ -- etc
+
+- Create PR TEAM...
+
+
+FROM RAAHEM:
+Chair of the Parliament
+The secretary's office of the USG will have the responsibility to control and organize the weekly meetings. This includes, making sure the meeting sticks to the agenda and take care of all voting procedures. Furthermore, they will also be responsible in making sure that discipline and order is observed during the meeting.
+--> HELL NO !? "control" hahah
+--> Lukas is currently doing a good job, so I don't think we need this.

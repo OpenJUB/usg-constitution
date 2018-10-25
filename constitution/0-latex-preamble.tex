@@ -1,0 +1,72 @@
+% Math
+\usepackage{mathpazo}
+
+% Defaut Encoding
+\usepackage[T1]{fontenc}
+
+% Table of Contents Custom
+%\usepackage[tocflat]{tocstyle}
+%\usetocstyle{standard}
+\usepackage{multicol}
+\setlength\columnsep{30pt}
+\makeatletter
+\renewcommand\tableofcontents{%
+  \null\hfill\textbf{\Large\contentsname}\hfill\null\par
+  \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
+  \@starttoc{toc}%
+}
+\makeatother
+
+% Set options for enumerate environment
+\usepackage{enumitem}
+\setenumerate{nosep}
+
+% Renew paragraph command to give §1, §2, etc.
+\usepackage{titlesec}
+\renewcommand{\theparagraph}{\arabic{paragraph}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}[runin]%
+  {\normalfont\normalsize\bfseries}{}{0pt}%
+  {\hspace*{1em}\S\refstepcounter{paragraph}\theparagraph}
+\let\oldparagraph\paragraph%
+\renewcommand{\paragraph}{\vspace*{-\baselineskip}\oldparagraph}
+\newcommand{\myparagraph}{\vspace*{-\baselineskip}\oldparagraph}
+
+% Fix Section Whitespace
+%\titleclass{\sectionstar}{straight}[\section]
+%\newcounter{sectionstar}
+%\let\sectionstar\section
+%\newcommand{\sectionstar}[1]{#1\quad}
+%\titleformat{name=\sectionstar}[runin]{\normalfont\scshape}{Section \refstepcounter{section}\thesection. }{0em}{}
+%\titlespacing*{\sectionstar}{0em}{0em}{0em}
+\newcommand{\sectionss}[1]{\vspace{\baselineskip}\sectionstar{#1}}
+
+%\renewcommand{\section}{\@ifstar{\sectionstar}{\oldsection}\makeatother}
+
+
+%\titleformat{name=\paragraph,numberless}[runin]
+%  {\normalfont\normalsize\bfseries}{}{0pt}%
+%  {\hspace*{1em}\S\refstepcounter{paragraph}\theparagraph}
+
+% Paragraph Spacing
+\usepackage{parskip}
+\setlength{\parskip}{0em}
+\setlength{\parindent}{0pt}
+
+% Automatically Handled Acronyms
+\usepackage{hyperref}
+\usepackage[nolist]{acronym}
+
+% To color change
+\usepackage{xcolor}
+
+% Tracking Changes
+\usepackage[inline]{../misc/trackchanges}
+\addeditor{P}
+\addeditor{S}
+\addeditor{N}
+%\definechangesauthor[color=red]{P} % PARLIAMENT APPROVED
+%\definechangesauthor[color=orange]{S} % SUGGESTED
+%\definechangesauthor[color=gray]{N} % NOTE
+
+% Acronyms

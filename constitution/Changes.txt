@@ -1,0 +1,58 @@
+Moved recurring tasks from Constitution to By-laws.
+
+Updated AAC, CAC provisions.
+
+Added provisions for the Committees:
+may elect their own chair (not necessarily a Parliament member)
+overruling of their decisions only by unanimous vote in the Parliament
+
+Changed minor wordings and spell checks.
+
+Included Parliament Provisions
+
+Delegation to Teacher of the Year
+
+FAC mandate clarified: all the application has to go through the FAC. Included threshold of FAC size to seven (7) for funding applications.
+
+[Increased funding thresholds to 500 with Presi and 1000 with Parliament.]
+
+Revised Student Representation classification
+
+Fix Preamble, the USG is not elected (completely)
+
+Make Section Numbers run through entire document
+
+Added Definition Rules of Procedure from Colin
+
+Added / Clarified Definitions USG Members, MP
+
+Parliament cannot close meetings, only if confidential agenda item
+
+==================
+TO DO and TO FIX:
+
+
+- Disciplinary Council publish informal notes / announcement of what happened and consequences
+  requires (?): permission from victim and accused, chair of DC
+
+- *Enlarging* the USG and Parliament?
+- Complying with Bremisches Hochschulgesetz?
+
+- Clarify Election Procedures, what happens if the VP runs for president?
+   --> if they win, the second place becomes VP for half a year until next elections
+- If two positions are open, second place is only elected for half a year
+
+- FIX MEETING POLICIES they currently overlap with the RoPs a lot,
+either don't include any or all of them
+I prefer the latter to have everything in one place.
+But this contradicts Colin's suggested definitions of RoPs.
+
+======================
+CLARIFICATIONS NEEDED:
+by Colin
+
+Does article XI hold for the USG Parliament only or for the entire USG (in particular section 6 and the second part of section 3 (public and secret votes in the committees), in article XI section 6 it is not extremely clear who is to impeached (the chair I presume))?
+In article XI section 9, a number is missing it is not clear after how long absence the impeachment procedure is started - a unit is missing after the number 3 (is it 3 weeks or 3 month?)
+
+In the USG constitution (article X, section 4) the Rules of Procedure are mentioned as determining the election Procedures. Are these Rules of Procedure part of the USG Parliament Rules of Procedure or are they separate (say the Rules of Procedure of the election committee)?
+In the second case: What is the official status of the election committee and particularly of their Rules of Procedure? In particular, those should IMHO apply for all elections, even though the election committee forms itself only shortly before and election and is thus inactive most of the time (nevertheless it exists as the election committee, hence its Rules of Procedure should still apply?).

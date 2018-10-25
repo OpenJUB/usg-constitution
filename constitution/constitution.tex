@@ -1,0 +1,188 @@
+\documentclass[12pt]{../misc/constitution}
+
+%==================================================
+%                     Latex Preamble 
+%==================================================
+
+\input{../constitution/0-latex-preamble.tex}
+\begin{document}
+
+%==================================================
+%                     Title and ToC 
+%==================================================
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth, right]{../misc/jacobs.png}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{../misc/usg.jpg}
+\end{figure}
+
+\begin{center}
+\textbf{\Large{THE ESTABLISHMENT OF THE JACOBS UNIVERSITY\\
+UNDERGRADUATE STUDENT BODY}}
+\end{center}
+
+\begingroup
+\let\clearpage\relax
+\setcounter{tocdepth}{2}
+
+\renewcommand{\contentsname}{\centering Table of Contents}
+\pagenumbering{roman}
+
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+\endgroup
+
+\newpage
+
+
+\linenumbers
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%==================================================
+%                     Begin Content 
+%==================================================
+
+
+% CURRENT TEXTCOLOR MEANINGS
+% RED PROPOSED CHANGE
+% ORANGE WIP CHANGE
+% GREY NOTE TO BE CONSIDERED, YET TO BE DONE
+
+\part{CONSTITUTION OF THE UNDERGRADUATE STUDENT BODY}
+
+
+%==================================================
+%                     Preamble 
+%==================================================
+
+\input{../constitution/0-preamble.tex}
+
+%==================================================
+%                     USG Constitution
+%==================================================
+
+\label{PartA}
+
+\input{../constitution/a1-usg.tex}
+
+%==================================================
+%                     Executive Unit
+%==================================================
+
+\input{../constitution/a2-executive.tex}
+
+%==================================================
+%                     Parliament
+%==================================================
+
+\input{../constitution/a3-legislative.tex}
+
+%==================================================
+%                     Student Court 
+%==================================================
+
+\input{../constitution/a4-judicial.tex}
+
+%==================================================
+%                  Student Delegates 
+%==================================================
+
+\input{../constitution/a5-delegates.tex}
+
+%==================================================
+%                    COMMITTEE BYLAWS  
+%==================================================
+
+\part{BYLAWS AND PROVISIONS}
+\label{PartB}
+
+%==================================================
+%                     GENERAL 
+%==================================================
+
+\input{../constitution/b6-general.tex}
+
+%==================================================
+%                     PARLIAMENT 
+%==================================================
+
+\input{../constitution/b7-parliament.tex}
+
+%==================================================
+%                     AAC 
+%==================================================
+
+\input{../constitution/b8-aac.tex}
+
+%==================================================
+%                     CAC 
+%==================================================
+
+\input{b9-cac.tex}
+
+%==================================================
+%                     FAC 
+%==================================================
+
+\input{../constitution/b10-fac.tex}
+
+%==================================================
+%                     IAC 
+%==================================================
+
+\input{../constitution/b11-iac.tex}
+
+%==================================================
+%                     President's office 
+%==================================================
+
+\input{../constitution/b12-president.tex}
+
+%==================================================
+%                    PROVISIONS  
+%==================================================
+
+\part{PROVISIONS}
+\label{PartC}
+
+%==================================================
+%                     Accronyms
+%==================================================
+
+\input{../constitution/0-acronyms.tex}
+
+%==================================================
+%                     Definitions 
+%==================================================
+
+\input{../constitution/c13-definitions.tex}
+
+%==================================================
+%                     Election Procedures 
+%==================================================
+
+\input{../constitution/c14-elections.tex}
+
+%==================MEETING POLICIES=====================
+
+\input{../constitution/c15-meetings.tex}
+
+%==================================================
+%                     Final Provisions 
+%==================================================
+
+\input{../constitution/c16-final.tex}
+
+%\newpage
+%\nolinenumbers
+
+
+\end{document}
