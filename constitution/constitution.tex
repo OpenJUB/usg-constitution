@@ -1,4 +1,5 @@
 \documentclass[12pt]{../misc/constitution}
+\newcommand{\changesoptions}{inline}
 
 %==================================================
 %                     Latex Preamble 
@@ -29,7 +30,21 @@ UNDERGRADUATE STUDENT BODY}}
 
 \begingroup
 \let\clearpage\relax
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
+
+\makeatletter
+\def\toclevel@part{0}
+\addtocontents{toc}{\string\let\string\l@part\string\l@chapter}
+\def\toclevel@article{1}
+\addtocontents{toc}{\string\let\string\l@article\string\l@section}
+\titlecontents{article}[1.5em] {\bfseries} {\contentslabel{2.8em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\def\toclevel@section{2}
+\addtocontents{toc}{\string\let\string\l@section\string\l@subsection}
+\titlecontents{section}[3em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\def\toclevel@sectionstar{2}
+\addtocontents{toc}{\string\let\string\l@sectionstar\string\l@subsection}
+\titlecontents{sectionstar}[3em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\makeatother
 
 \renewcommand{\contentsname}{\centering Table of Contents}
 \pagenumbering{roman}
@@ -157,6 +172,12 @@ UNDERGRADUATE STUDENT BODY}}
 \input{../constitution/b11-iac.tex}
 
 %==================================================
+%                     Support structures by-laws
+%==================================================
+
+% Currently, there are none
+
+%==================================================
 %                     Student Court 
 %==================================================
 
@@ -199,6 +220,5 @@ UNDERGRADUATE STUDENT BODY}}
 
 %\newpage
 %\nolinenumbers
-
 
 \end{document}
