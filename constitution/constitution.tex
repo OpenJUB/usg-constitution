@@ -1,4 +1,5 @@
-\documentclass[12pt]{../misc/constitution}
+\documentclass[12pt]{constitution}
+\newcommand{\changesoptions}{finalnew}
 
 %==================================================
 %                     Latex Preamble 
@@ -29,7 +30,21 @@ UNDERGRADUATE STUDENT BODY}}
 
 \begingroup
 \let\clearpage\relax
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
+
+\makeatletter
+\def\toclevel@part{0}
+\addtocontents{toc}{\string\let\string\l@part\string\l@chapter}
+\def\toclevel@article{1}
+\addtocontents{toc}{\string\let\string\l@article\string\l@section}
+\titlecontents{article}[1.5em] {\bfseries} {\contentslabel{2.8em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\def\toclevel@section{2}
+\addtocontents{toc}{\string\let\string\l@section\string\l@subsection}
+\titlecontents{section}[3em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\def\toclevel@sectionstar{2}
+\addtocontents{toc}{\string\let\string\l@sectionstar\string\l@subsection}
+\titlecontents{sectionstar}[3em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\makeatother
 
 \renewcommand{\contentsname}{\centering Table of Contents}
 \pagenumbering{roman}
@@ -74,16 +89,16 @@ UNDERGRADUATE STUDENT BODY}}
 \input{../constitution/a1-usg.tex}
 
 %==================================================
-%                     Executive Unit
-%==================================================
-
-\input{../constitution/a2-executive.tex}
-
-%==================================================
 %                     Parliament
 %==================================================
 
 \input{../constitution/a3-legislative.tex}
+
+%==================================================
+%                     Executive Unit
+%==================================================
+
+\input{../constitution/a2-executive.tex}
 
 %==================================================
 %                     Student Court 
@@ -98,7 +113,17 @@ UNDERGRADUATE STUDENT BODY}}
 \input{../constitution/a5-delegates.tex}
 
 %==================================================
-%                    COMMITTEE BYLAWS  
+%                  Student Delegates 
+%==================================================
+
+\input{../constitution/a5-general.tex}
+%==================================================
+%                    General rules  
+%==================================================
+
+\input{../constitution/a6-elect.tex}
+%==================================================
+%                    Elections  
 %==================================================
 
 \part{BYLAWS AND PROVISIONS}
@@ -115,6 +140,12 @@ UNDERGRADUATE STUDENT BODY}}
 %==================================================
 
 \input{../constitution/b7-parliament.tex}
+
+%==================================================
+%                     President's office 
+%==================================================
+
+\input{../constitution/b12-president.tex}
 
 %==================================================
 %                     AAC 
@@ -141,10 +172,16 @@ UNDERGRADUATE STUDENT BODY}}
 \input{../constitution/b11-iac.tex}
 
 %==================================================
-%                     President's office 
+%                     Support structures by-laws
 %==================================================
 
-\input{../constitution/b12-president.tex}
+% Currently, there are none
+
+%==================================================
+%                     Student Court 
+%==================================================
+
+\input{../constitution/b12-judicative.tex}
 
 %==================================================
 %                    PROVISIONS  
@@ -183,6 +220,5 @@ UNDERGRADUATE STUDENT BODY}}
 
 %\newpage
 %\nolinenumbers
-
 
 \end{document}

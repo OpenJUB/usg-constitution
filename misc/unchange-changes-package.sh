@@ -1,4 +1,4 @@
-for file in `ls *.tex`; do
+for file in `ls ../constitution/*.tex`; do
 	echo "processing file $file..."
 	sed -i 's/\\added\[id=P\]{/\\add\[P\]{/' $file
 	sed -i 's/\\added\[id=S\]{/\\add\[S\]{/' $file

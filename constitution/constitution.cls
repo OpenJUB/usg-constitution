@@ -11,10 +11,6 @@
 \RequirePackage{titletoc}
 \RequirePackage{paralist}
 
-
-
-%\newcommand{\bylaw}[1]{\part{#1} \setcounter{section}{0}}
-%\renewcommand{\partname}{Bylaw}
 \titleclass{\part}{straight}
 \titleformat{\part}[display]{\filcenter\normalfont\bfseries}{PART \thepart}{0pt}{\filcenter\normalfont\bfseries}
 \titlespacing*{\part}{0mm}{*4}{*2.3}[0mm]
@@ -25,27 +21,11 @@
 \titlespacing*{\article}{0mm}{*4}{*2.3}[0mm]
 \newcounter{article}
 
-
-\titlecontents{article}[1.5em] {\bfseries} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
-
-
-%\makeatletter
-%\renewcommand\section{\@startsection
-%{section}{1}{0mm}%
-%{-\baselineskip}%
-%{-0.5\baselineskip}%
-%{\normalfont\normalsize\bfseries}}%
-%\makeatother
-
-%\makeatletter
-%\@addtoreset{section}{article}
-%\makeatother
-
 \titleformat{\section}[runin]{\normalfont\scshape}{Section \thesection. }{0em}{}[\newline]
 \titleclass\sectionstar{straight}[\section]
 \newcounter{sectionstar}
-\titleformat{name=\sectionstar}[runin]{\normalfont\scshape}{Section \refstepcounter{section}\thesection. }{0em}{}
-\titlespacing*{\sectionstar}{0em}{0em}{0em}
+\titleformat{\sectionstar}[runin]{\normalfont\scshape}{Section \refstepcounter{section}\setcounter{sectionstar}{\thesection}\thesection. }{0em}{}
+\titlespacing*{\sectionstar}{0mm}{*4}{*2.3}[0mm]
 
 
 %Formatting "enumeration numbers"
@@ -92,5 +72,3 @@
 
 \newlist{paragenum}{itemize}{1}
 \setlist[paragenum]{label=\paragraph{}}
-
-
