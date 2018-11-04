@@ -18,7 +18,7 @@
 ########################################################################
 # trackchanges.py
 ########################################################################
-# This program is a way to easly accept or regect changes made in
+# This program is a way to easly accept or reject changes made in
 # latex using the trackchanges.sty package.
 # 
 # To find the latest versions of this software and of the latex style
