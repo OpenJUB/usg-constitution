@@ -1,5 +1,5 @@
 \documentclass[12pt]{constitution}
-\newcommand{\changesoptions}{finalnew}
+\newcommand{\changesoptions}{inline}
 
 %==================================================
 %                     Latex Preamble 
@@ -37,13 +37,13 @@ UNDERGRADUATE STUDENT BODY}}
 \addtocontents{toc}{\string\let\string\l@part\string\l@chapter}
 \def\toclevel@article{1}
 \addtocontents{toc}{\string\let\string\l@article\string\l@section}
-\titlecontents{article}[1.5em] {\bfseries} {\contentslabel{2.8em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\titlecontents{article}[1em] {\bfseries} {\contentslabel{2.8em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
 \def\toclevel@section{2}
 \addtocontents{toc}{\string\let\string\l@section\string\l@subsection}
-\titlecontents{section}[3em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\titlecontents{section}[2em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
 \def\toclevel@sectionstar{2}
 \addtocontents{toc}{\string\let\string\l@sectionstar\string\l@subsection}
-\titlecontents{sectionstar}[3em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
+\titlecontents{sectionstar}[2em] {\normalfont} {\contentslabel{2.3em}} {\hspace*{-2.3em}} {\titlerule*[1pc]{.}\contentspage}
 \makeatother
 
 \renewcommand{\contentsname}{\centering Table of Contents}
