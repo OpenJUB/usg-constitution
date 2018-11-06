@@ -111,7 +111,7 @@ __version_date__ = datetime.date(2009,4,22)
 # - Keeps original and new TeX files in sync.
 
 class TrackChanges(QtCore.QObject):
-    def __init__(self, parent=None):
+    def __init__(self, filename, parent=None):
         global ui_base_window
         global trackchanges_main
         
@@ -150,6 +150,27 @@ class TrackChanges(QtCore.QObject):
 
         # Set up some options
         self.debug = 1
+
+
+		#open the tex file passed as argument
+        self.tex_filename = filename
+
+        # Read the file.
+        with open(self.tex_filename) as tex_file:
+            self.tex_orig = tex_file.read()
+
+        self.tex_new = self.tex_orig
+
+        self.doc_saved = True
+
+        # Reset the search position
+        self.search_position = 0
+
+        # Display the file in the main window.
+        ui_central_widget.text_main.setPlainText(self.tex_new)
+
+        # Start the main loop.
+        self.doItBaby()
 
 
     def exit(self):
@@ -1611,6 +1632,6 @@ class TexSyntaxError(Error):
 #=======================================================================
 # Start the program.
 if __name__ == '__main__':
-    trackchanges_main = TrackChanges()
+    trackchanges_main = TrackChanges(sys.argv[1])
 
     sys.exit(app.exec_())
